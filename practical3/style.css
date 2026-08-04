@@ -1,0 +1,246 @@
+* {
+  box-sizing: border-box;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.94);
+  padding: 35px 45px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+  width: 480px;
+  animation: fadeIn 0.4s ease;
+  backdrop-filter: blur(2px);
+}
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: url('background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 30px 10px;
+}
+
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h2 {
+  margin: 0;
+  color: #333;
+  font-size: 24px;
+}
+
+.subtitle {
+  margin: 6px 0 0;
+  color: #888;
+  font-size: 13px;
+}
+
+label {
+  display: block;
+  margin-top: 14px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #444;
+}
+
+input {
+  width: 100%;
+  padding: 10px 12px;
+  margin-top: 6px;
+  border: 1.5px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+input:focus {
+  outline: none;
+  border-color: #764ba2;
+  box-shadow: 0 0 0 3px rgba(118, 75, 162, 0.15);
+}
+
+.subjects-header {
+  margin-top: 22px;
+  margin-bottom: 6px;
+  font-size: 13px;
+  font-weight: 700;
+  color: #764ba2;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border-bottom: 1.5px solid #eee;
+  padding-bottom: 6px;
+}
+
+.subjects-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px 20px;
+  margin-top: 10px;
+}
+
+.subject-row {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.subject-label {
+  font-size: 13px;
+  color: #444;
+}
+
+.marks-input {
+  width: 100%;
+  margin-top: 0;
+  text-align: center;
+}
+
+
+button {
+  width: 100%;
+  margin-top: 22px;
+  padding: 12px;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  transition: transform 0.15s, box-shadow 0.15s;
+}
+
+button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 14px rgba(118, 75, 162, 0.35);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+#result {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 14px;
+  min-height: 20px;
+}
+
+.info-box {
+  text-align: left;
+  background: #f9fafb;
+  border-radius: 8px;
+  padding: 12px 14px;
+  margin-bottom: 12px;
+}
+
+.info-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 3px 0;
+  font-size: 13px;
+  color: #444;
+}
+
+.info-row span:first-child {
+  color: #888;
+}
+
+.subject-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 12px;
+  font-size: 13px;
+}
+
+.subject-table th, .subject-table td {
+  text-align: left;
+  padding: 6px 8px;
+  border-bottom: 1px solid #eee;
+}
+
+.subject-table th {
+  color: #888;
+  font-weight: 600;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.subject-table td:last-child, .subject-table th:last-child {
+  text-align: right;
+}
+
+.error {
+  color: #dc2626;
+  font-weight: 500;
+  background: #fef2f2;
+  padding: 8px;
+  border-radius: 6px;
+  display: block;
+}
+
+.stats-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.stat-box {
+  flex: 1;
+  background: #f0f4ff;
+  border-radius: 8px;
+  padding: 8px;
+}
+
+.stat-label {
+  font-size: 11px;
+  color: #888;
+  text-transform: uppercase;
+}
+
+.stat-value {
+  font-size: 16px;
+  font-weight: 700;
+  color: #444;
+  margin-top: 2px;
+}
+
+.success-box {
+  padding: 14px;
+  border-radius: 8px;
+  background: #f0fdf4;
+  border: 1px solid #bbf7d0;
+}
+
+.grade-badge {
+  display: inline-block;
+  margin-top: 4px;
+  padding: 6px 18px;
+  border-radius: 20px;
+  background: linear-gradient(135deg, #16a34a, #22c55e);
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.grade-badge.fail {
+  background: linear-gradient(135deg, #dc2626, #ef4444);
+}

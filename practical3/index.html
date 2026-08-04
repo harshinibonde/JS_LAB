@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Student Grade Calculator</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="card">
+  <div class="header">
+    <h2>Grade Calculator</h2>
+    <p class="subtitle">Enter details to calculate the grade</p>
+  </div>
+
+  <label for="name">Student Name</label>
+  <input type="text" id="name" placeholder="e.g. Harry Sharma">
+
+  <label for="prn">PRN</label>
+  <input type="text" id="prn" placeholder="e.g. 12345678">
+
+  <label for="branch">Branch / Class</label>
+  <input type="text" id="branch" placeholder="e.g. Computer Engineering">
+
+  <label for="semester">Semester</label>
+  <input type="text" id="semester" placeholder="e.g. 5th Semester">
+
+  <div class="subjects-header">Subject Marks (0–100 each)</div>
+
+  <div class="subjects-grid">
+    <div class="subject-row">
+      <span class="subject-label">Maths</span>
+      <input type="number" class="marks-input" id="sub1" min="0" max="100" placeholder="Marks">
+    </div>
+    <div class="subject-row">
+      <span class="subject-label">Physics</span>
+      <input type="number" class="marks-input" id="sub2" min="0" max="100" placeholder="Marks">
+    </div>
+    <div class="subject-row">
+      <span class="subject-label">Chemistry</span>
+      <input type="number" class="marks-input" id="sub3" min="0" max="100" placeholder="Marks">
+    </div>
+    <div class="subject-row">
+      <span class="subject-label">Computer Sci</span>
+      <input type="number" class="marks-input" id="sub4" min="0" max="100" placeholder="Marks">
+    </div>
+    <div class="subject-row">
+      <span class="subject-label">English</span>
+      <input type="number" class="marks-input" id="sub5" min="0" max="100" placeholder="Marks">
+    </div>
+  </div>
+
+  <button onclick="calculateGrade()">Get Grade</button>
+
+  <div id="result"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
