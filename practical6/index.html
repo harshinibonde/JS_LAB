@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>String Case Studies</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="split">
+
+    <section class="pane">
+        <div class="pane-inner">
+            <h1>Reverse a String</h1>
+            <p class="sub">Enter any text and reverse it character by character.</p>
+
+            <label for="reverseStr">Input</label>
+            <input type="text" id="reverseStr" value="">
+
+            <button onclick="reverseString()">Reverse String</button>
+
+            <div class="output" id="reverseOutput">
+                <span class="placeholder">Result will appear here</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="pane pane-alt">
+        <div class="pane-inner">
+            <h1>Count Vowels</h1>
+            <p class="sub">Enter a paragraph and count how many vowels it contains.</p>
+
+            <label for="vowelStr">Paragraph</label>
+            <textarea id="vowelStr"></textarea>
+
+            <button onclick="countVowels()">Count Vowels</button>
+
+            <div class="output" id="vowelOutput">
+                <span class="placeholder">Result will appear here</span>
+            </div>
+        </div>
+    </section>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

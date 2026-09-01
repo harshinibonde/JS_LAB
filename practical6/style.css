@@ -1,0 +1,159 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    font-family: 'Inter', Arial, sans-serif;
+}
+
+.split {
+    display: flex;
+    min-height: 100vh;
+}
+
+.pane {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 50px;
+    background: #ffffff;
+}
+
+.pane-alt {
+    background: #f4fbfa;
+    border-left: 1px solid #e2ece9;
+}
+
+.pane-inner {
+    width: 100%;
+    max-width: 380px;
+}
+
+.tag {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+    color: #0f9b8e;
+    background: #e2f6f3;
+    padding: 4px 10px;
+    border-radius: 999px;
+    margin-bottom: 14px;
+}
+
+h1 {
+    font-size: 26px;
+    font-weight: 700;
+    color: #14201e;
+    margin: 0 0 8px;
+    letter-spacing: -0.4px;
+}
+
+.sub {
+    font-size: 14px;
+    color: #6b7876;
+    margin: 0 0 28px;
+    line-height: 1.5;
+}
+
+label {
+    display: block;
+    font-size: 12px;
+    font-weight: 600;
+    color: #46534f;
+    margin-bottom: 6px;
+}
+
+input[type="text"], textarea {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1.5px solid #dfe6e4;
+    border-radius: 10px;
+    font-family: inherit;
+    font-size: 14px;
+    color: #14201e;
+    background: #fff;
+    margin-bottom: 16px;
+    transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+textarea {
+    height: 88px;
+    resize: vertical;
+}
+
+input[type="text"]:focus, textarea:focus {
+    outline: none;
+    border-color: #0f9b8e;
+    box-shadow: 0 0 0 3px rgba(15, 155, 142, 0.14);
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    background: #0f9b8e;
+    color: white;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.15s, transform 0.1s;
+}
+
+button:hover {
+    background: #0c8074;
+}
+
+button:active {
+    transform: translateY(1px);
+}
+
+.output {
+    margin-top: 22px;
+    padding: 16px 18px;
+    background: #f6f8f8;
+    border: 1px solid #eceeee;
+    border-radius: 10px;
+    font-size: 14px;
+    line-height: 1.8;
+    color: #2b3634;
+    min-height: 20px;
+}
+
+.output .placeholder {
+    color: #a8b2b0;
+    font-style: italic;
+}
+
+.output p {
+    margin: 2px 0;
+    word-break: break-word;
+}
+
+.output b {
+    color: #0f9b8e;
+    font-weight: 600;
+}
+
+@media (max-width: 760px) {
+    .split {
+        flex-direction: column;
+    }
+
+    .pane-alt {
+        border-left: none;
+        border-top: 1px solid #e2ece9;
+    }
+
+    .pane {
+        padding: 40px 28px;
+    }
+}
