@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seminar Schedule Planner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="page">
+
+        <header class="header">
+            <div>
+                <p class="label">SEMINAR MANAGEMENT</p>
+                <h1>Seminar Schedule Planner</h1>
+                <p class="subtitle">
+                    Select a session to view and update its details.
+                </p>
+            </div>
+
+            <div class="storage-status">
+                <div class="status-item">
+                    <span class="dot local"></span>
+                    <div>
+                        <strong>Local</strong>
+                        <small>Persistent</small>
+                    </div>
+                </div>
+
+                <div class="status-item">
+                    <span class="dot session"></span>
+                    <div>
+                        <strong>Session</strong>
+                        <small>Temporary</small>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+
+        <main class="content">
+
+            <section class="schedule-section">
+
+                <div class="section-heading">
+                    <div>
+                        <h2>Seminar Schedule</h2>
+                        <p>Click any session to select it.</p>
+                    </div>
+
+                    <span class="session-count">
+                        6 Sessions
+                    </span>
+                </div>
+
+
+                <div class="schedule-table">
+
+                    <div class="table-head">
+                        <div>DAY</div>
+                        <div>TIME</div>
+                        <div>TOPIC</div>
+                    </div>
+
+
+                    <!-- Monday -->
+
+                    <div
+                        class="schedule-row"
+                        data-day="Monday"
+                        data-schedule="8:00 a.m. - 5:00 p.m."
+                        data-topic="Introduction to XML"
+                    >
+
+                        <div class="day">
+                            <span class="day-number">01</span>
+                            <strong>Monday</strong>
+                        </div>
+
+                        <div class="time">
+                            <span class="begin">8:00 a.m.</span>
+                            <span class="arrow">→</span>
+                            <span class="end">5:00 p.m.</span>
+                        </div>
+
+                        <div class="topic">
+                            Introduction to XML
+                        </div>
+
+                        <span class="select-arrow">›</span>
+
+                    </div>
+
+
+                    <div
+                        class="schedule-row"
+                        data-day="Monday"
+                        data-schedule="8:00 a.m. - 5:00 p.m."
+                        data-topic="Validity: DTD and Relax NG"
+                    >
+
+                        <div class="day">
+                            <span class="day-number">01</span>
+                            <strong>Monday</strong>
+                        </div>
+
+                        <div class="time">
+                            <span class="begin">8:00 a.m.</span>
+                            <span class="arrow">→</span>
+                            <span class="end">5:00 p.m.</span>
+                        </div>
+
+                        <div class="topic">
+                            Validity: DTD and Relax NG
+                        </div>
+
+                        <span class="select-arrow">›</span>
+
+                    </div>
+
+
+                    <!-- Tuesday -->
+
+                    <div
+                        class="schedule-row"
+                        data-day="Tuesday"
+                        data-schedule="8:00 a.m. - 11:00 a.m."
+                        data-topic="XPath"
+                    >
+
+                        <div class="day">
+                            <span class="day-number">02</span>
+                            <strong>Tuesday</strong>
+                        </div>
+
+                        <div class="time">
+                            <span class="begin">8:00 a.m.</span>
+                            <span class="arrow">→</span>
+                            <span class="end">11:00 a.m.</span>
+                        </div>
+
+                        <div class="topic">
+                            XPath
+                        </div>
+
+                        <span class="select-arrow">›</span>
+
+                    </div>
+
+
+                    <div
+                        class="schedule-row"
+                        data-day="Tuesday"
+                        data-schedule="11:00 a.m. - 2:00 p.m."
+                        data-topic="XSL Transformations"
+                    >
+
+                        <div class="day">
+                            <span class="day-number">02</span>
+                            <strong>Tuesday</strong>
+                        </div>
+
+                        <div class="time">
+                            <span class="begin">11:00 a.m.</span>
+                            <span class="arrow">→</span>
+                            <span class="end">2:00 p.m.</span>
+                        </div>
+
+                        <div class="topic">
+                            XSL Transformations
+                        </div>
+
+                        <span class="select-arrow">›</span>
+
+                    </div>
+
+
+                    <div
+                        class="schedule-row"
+                        data-day="Tuesday"
+                        data-schedule="2:00 p.m. - 5:00 p.m."
+                        data-topic="XSL Formatting Objects"
+                    >
+
+                        <div class="day">
+                            <span class="day-number">02</span>
+                            <strong>Tuesday</strong>
+                        </div>
+
+                        <div class="time">
+                            <span class="begin">2:00 p.m.</span>
+                            <span class="arrow">→</span>
+                            <span class="end">5:00 p.m.</span>
+                        </div>
+
+                        <div class="topic">
+                            XSL Formatting Objects
+                        </div>
+
+                        <span class="select-arrow">›</span>
+
+                    </div>
+
+
+                    <!-- Wednesday -->
+
+                    <div
+                        class="schedule-row"
+                        data-day="Wednesday"
+                        data-schedule="8:00 a.m. - 12:00 p.m."
+                        data-topic="XSL Formatting Objects"
+                    >
+
+                        <div class="day">
+                            <span class="day-number">03</span>
+                            <strong>Wednesday</strong>
+                        </div>
+
+                        <div class="time">
+                            <span class="begin">8:00 a.m.</span>
+                            <span class="arrow">→</span>
+                            <span class="end">12:00 p.m.</span>
+                        </div>
+
+                        <div class="topic">
+                            XSL Formatting Objects
+                        </div>
+
+                        <span class="select-arrow">›</span>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- Selected Session -->
+
+            <aside class="details-card">
+
+                <div class="details-header">
+                    <div>
+                        <p class="label">SELECTED SESSION</p>
+                        <h2>Session Details</h2>
+                    </div>
+
+                    <span id="selectedBadge" class="badge">
+                        None
+                    </span>
+                </div>
+
+
+                <div id="emptyState" class="empty-state">
+                    <div class="empty-icon">+</div>
+
+                    <h3>No session selected</h3>
+
+                    <p>
+                        Click a seminar session from the schedule
+                        to view its details here.
+                    </p>
+                </div>
+
+
+                <div id="sessionDetails" class="session-details">
+
+                    <div class="detail-block">
+                        <span>DAY</span>
+                        <strong id="selectedDay">—</strong>
+                    </div>
+
+                    <div class="detail-block">
+                        <span>SCHEDULE</span>
+                        <strong id="selectedSchedule">—</strong>
+                    </div>
+
+                    <div class="detail-block">
+                        <span>TOPIC</span>
+                        <strong id="selectedTopic">—</strong>
+                    </div>
+
+
+                    <button
+                        id="editBtn"
+                        class="edit-btn"
+                        type="button"
+                    >
+                        Edit Topic
+                    </button>
+
+                </div>
+
+
+                <div id="saved" class="saved-message"></div>
+
+
+                <button
+                    id="clearBtn"
+                    class="clear-btn"
+                    type="button"
+                >
+                    Clear Saved Preferences
+                </button>
+
+            </aside>
+
+        </main>
+
+
+        <footer>
+            JavaScript Lab • Practical 9 • Web Storage API
+        </footer>
+
+    </div>
+
+
+    <!-- Edit Topic Modal -->
+
+    <div id="modal" class="modal">
+
+        <div class="modal-box">
+
+            <div class="modal-header">
+                <div>
+                    <p class="label">UPDATE SESSION</p>
+                    <h2>Edit Topic</h2>
+                </div>
+
+                <button
+                    id="closeModal"
+                    class="close-btn"
+                    type="button"
+                >
+                    ×
+                </button>
+            </div>
+
+
+            <label for="topicInput">
+                Seminar Topic
+            </label>
+
+            <input
+                type="text"
+                id="topicInput"
+                placeholder="Enter new topic"
+            >
+
+
+            <div class="modal-buttons">
+
+                <button
+                    id="cancelBtn"
+                    type="button"
+                    class="cancel-btn"
+                >
+                    Cancel
+                </button>
+
+                <button
+                    id="saveTopicBtn"
+                    type="button"
+                    class="save-btn"
+                >
+                    Save Topic
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
