@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Sargam Live | Book Tickets</title>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css"></head>
+<body>
+<nav class="top"><div class="logo">sargam<span>live</span></div>
+  <input id="search" placeholder="Search for concerts, artists, venues">
+  <div class="right"><span>Nagpur ▾</span><button id="myBtn" class="sm">My tickets <b id="cnt">0</b></button></div></nav>
+<div class="sub"><a>Concerts</a><a>Comedy</a><a>Theatre</a><a>Sports</a><a>Festivals</a></div>
+
+<section class="banner">
+  <div class="poster"><div class="disc"></div><h2>RAGA<br>RELOADED</h2><p>Live in concert</p></div>
+  <div class="info">
+    <span class="pill">Music · Hindi · Fusion</span>
+    <h1>Raga Reloaded — Live in Nagpur</h1>
+    <p>📅 Sat, 20 Dec 2026 · 7:00 PM onwards</p><p>📍 Vidarbha Cricket Association Ground, Nagpur</p>
+    <p>⏱ 3 hrs · Ages 5+ · Open air</p>
+    <p class="rate">★ 9.1/10 <small>(12.4k votes)</small></p>
+    <a href="#tickets" class="cta">Book tickets</a>
+  </div>
+</section>
+
+<main class="layout" id="tickets">
+  <section>
+    <h2>Select your zone</h2>
+    <div id="zones"></div>
+    <h2>About the show</h2>
+    <p class="about">An evening where classical ragas meet live electronic beats. Eight musicians, one stage, and a setlist that moves from Yaman to bass-heavy remixes. Gates open at 5:30 PM. Carry a valid ID.</p>
+    <div class="quote"><b>Before you go</b><p id="quote">—</p><button id="q" class="sm ghost">Another one</button></div>
+  </section>
+  <aside class="summary">
+    <h3>Booking summary</h3>
+    <div id="lines"><p class="muted">Add tickets to begin.</p></div>
+    <div class="tot"><span>Convenience fee (5%)</span><span id="fee">₹0</span></div>
+    <div class="tot big"><span>Total</span><span id="grand">₹0</span></div>
+    <input id="n" placeholder="Full name"><input id="e" placeholder="Email"><input id="p" placeholder="Mobile" maxlength="10">
+    <p id="err"></p>
+    <button id="pay" class="cta full">Proceed to pay</button>
+  </aside>
+</main>
+
+<div id="modal" class="modal"><div class="box">
+  <button class="x">×</button><div id="boxBody"></div></div></div>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="script.js"></script>
+</body></html>

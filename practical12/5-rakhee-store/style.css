@@ -1,0 +1,31 @@
+:root{--mar:#7a0c2e;--gold:#d4a017;--cream:#fff4dc;--saf:#e8590c;--teal:#0f5f5c}
+*{box-sizing:border-box}body{margin:0;font-family:'Mukta',sans-serif;background:var(--cream);color:#3a1020}
+.strip{background:var(--gold);color:var(--mar);font-weight:700;padding:6px}
+header{background:var(--mar);color:var(--cream)}
+.toran{height:22px;background:radial-gradient(circle at 12px 0,var(--saf) 10px,transparent 11px) 0 0/48px 22px,radial-gradient(circle at 36px 0,var(--gold) 10px,transparent 11px) 0 0/48px 22px}
+.head{display:flex;justify-content:space-between;align-items:center;padding:14px 6vw}
+.brand h1{margin:0;font-family:'Tiro Devanagari Hindi',serif;font-size:2.4rem;color:var(--gold)}.brand p{margin:0;font-family:'Yatra One';letter-spacing:4px}
+#cartBtn{background:var(--gold);color:var(--mar);border:0;padding:10px 18px;border-radius:30px;font-weight:700;font-family:inherit;cursor:pointer;font-size:1rem}
+#cartBtn b{background:var(--mar);color:#fff;border-radius:50%;padding:1px 8px;margin-left:4px}
+.hero{position:relative;text-align:center;padding:70px 6vw;background:linear-gradient(var(--mar),#a3173f);color:var(--cream);overflow:hidden;border-bottom:6px double var(--gold)}
+.mandala{position:absolute;left:50%;top:50%;width:520px;height:520px;transform:translate(-50%,-50%);border-radius:50%;opacity:.18;background:repeating-conic-gradient(var(--gold) 0 6deg,transparent 6deg 15deg);-webkit-mask:radial-gradient(#0000 35%,#000 36% 70%,#0000 71%);mask:radial-gradient(#0000 35%,#000 36% 70%,#0000 71%)}
+.hero h2{font-family:'Yatra One';font-size:clamp(2rem,6vw,3.6rem);margin:0 0 10px;color:var(--gold);position:relative}.hero p{position:relative;max-width:520px;margin:0 auto 20px;font-size:1.15rem}
+.btn{display:inline-block;background:var(--gold);color:var(--mar);padding:12px 28px;border:0;border-radius:4px;font:700 1rem 'Mukta';text-decoration:none;cursor:pointer;position:relative;box-shadow:0 4px 0 #8a6508}
+.btn:hover{background:#e6b422}.full{width:100%;margin-top:10px}
+section{padding:46px 6vw;text-align:center}.title{display:flex;justify-content:center;align-items:center;gap:14px;color:var(--gold);margin-bottom:20px}
+.title h3{font-family:'Yatra One';font-size:2rem;margin:0;color:var(--mar)}.title span{font-size:1.5rem}
+.filters{display:flex;gap:10px;justify-content:center;margin-bottom:26px;flex-wrap:wrap}
+.f{background:transparent;border:2px solid var(--mar);color:var(--mar);padding:8px 22px;border-radius:30px;font:600 1rem 'Mukta';cursor:pointer}.f.on,.f:hover{background:var(--mar);color:var(--cream)}
+#grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:22px;max-width:1100px;margin:auto}
+.p{background:#fffaf0;border:2px solid var(--gold);outline:4px solid #fffaf0;outline-offset:-8px;border-radius:6px 6px 40px 6px;padding:24px 16px;box-shadow:0 6px 0 #d4a01744}
+.em{font-size:3.4rem;width:100px;height:100px;margin:0 auto 10px;display:grid;place-items:center;border-radius:50%;background:radial-gradient(#fff,#fde5b0);border:3px dotted var(--saf)}
+.p h4{margin:6px 0 2px;font-family:'Yatra One';font-weight:400;font-size:1.15rem;color:var(--mar)}.p small{color:#7b5a63}
+.pr{font-size:1.3rem;font-weight:700;color:var(--teal);margin:8px 0}.add{background:var(--mar);color:var(--cream);border:0;padding:9px 18px;border-radius:4px;font:700 .95rem 'Mukta';cursor:pointer}.add:hover{background:var(--saf)}
+.wish{background:#fbe3b4;border-top:4px double var(--mar)}#wish{max-width:600px;margin:0 auto 18px;font-size:1.2rem;font-style:italic}
+footer{background:var(--mar);color:var(--gold);text-align:center;padding:18px}
+#drawer{position:fixed;right:-380px;top:0;width:360px;max-width:92vw;height:100%;background:var(--cream);border-left:6px double var(--gold);padding:20px;transition:right .3s;z-index:20;overflow:auto}
+#drawer.open{right:0}#veil{display:none;position:fixed;inset:0;background:#0007;z-index:15}#veil.on{display:block}
+.dh,.dt{display:flex;justify-content:space-between;align-items:center}.dh h3{font-family:'Yatra One';font-weight:400;color:var(--mar);margin:0}#close{background:none;border:0;font-size:2rem;cursor:pointer}
+.ci{display:flex;gap:10px;align-items:center;padding:10px 0;border-bottom:1px dashed var(--gold)}.ci .n{flex:1}.ci button{width:26px;height:26px;border-radius:50%;border:1px solid var(--mar);background:#fff;cursor:pointer}
+.dt{margin:16px 0;font-size:1.2rem}#drawer input{width:100%;padding:11px;border:2px solid var(--gold);border-radius:4px;font:inherit}#note{font-weight:600;color:var(--teal)}
+@media (prefers-reduced-motion:reduce){marquee{display:none}}

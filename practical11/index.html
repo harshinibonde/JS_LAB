@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Study Planner</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+
+<header class="top">
+    <div>
+        <h1>Study Planner</h1>
+        <p>Class scheduler and task tracker in one place</p>
+    </div>
+    <div class="clock-pill">
+        <span id="clock">--:--:--</span>
+        <span id="date"></span>
+    </div>
+</header>
+
+<main class="grid">
+
+    <!-- PART 1: Class Scheduler (timers + ES6 modules) -->
+    <section class="panel">
+        <div class="panel-head">
+            <span class="tag">Part 1</span>
+            <h2>Class Scheduler</h2>
+            <p class="sub">setInterval &middot; setTimeout &middot; ES6 modules</p>
+        </div>
+
+        <div class="next-card">
+            <span class="next-label">Next class in</span>
+            <div class="next-count" id="nextCountdown">00:00:00</div>
+            <div class="next-name" id="nextName">&mdash;</div>
+            <div class="next-note" id="nextNote"></div>
+        </div>
+
+        <h3 class="mini-title">Timetable</h3>
+        <ul class="class-list" id="classList"></ul>
+
+        <h3 class="mini-title">Focus Timer</h3>
+        <div class="timer-box">
+            <div class="timer-display" id="timerDisplay">25:00</div>
+            <div class="timer-controls">
+                <input type="number" id="timerMinutes" value="25" min="1" max="180">
+                <span class="unit">min</span>
+                <button type="button" id="timerStart" class="btn">Start</button>
+                <button type="button" id="timerReset" class="btn ghost">Reset</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- PART 2: Task Tracker (jQuery + storage + AJAX) -->
+    <section class="panel">
+        <div class="panel-head">
+            <span class="tag alt">Part 2</span>
+            <h2>Task Tracker</h2>
+            <p class="sub">jQuery &middot; DOM events &middot; localStorage &middot; AJAX</p>
+        </div>
+
+        <form id="taskForm" class="task-form" autocomplete="off">
+            <input type="text" id="taskInput" maxlength="60" placeholder="Add a new task...">
+            <button type="submit" class="btn">Add</button>
+        </form>
+        <div class="hint">
+            <span id="charCount">0 / 60</span>
+            <span id="appMsg"></span>
+        </div>
+
+        <div class="filters">
+            <button type="button" class="chip active" data-filter="all">All</button>
+            <button type="button" class="chip" data-filter="pending">Pending</button>
+            <button type="button" class="chip" data-filter="done">Done</button>
+        </div>
+
+        <ul class="task-list" id="taskList"></ul>
+
+        <div class="stats">
+            <div><b id="statTotal">0</b><span>Total</span></div>
+            <div><b id="statDone">0</b><span>Done</span></div>
+            <div><b id="statPending">0</b><span>Pending</span></div>
+        </div>
+        <div class="progress"><div class="bar" id="progressBar"></div></div>
+
+        <div class="actions">
+            <button type="button" id="loadSuggestions" class="btn alt">Load Suggestions (AJAX)</button>
+            <button type="button" id="clearDone" class="btn ghost">Clear Completed</button>
+        </div>
+    </section>
+
+</main>
+
+<!-- ES6 module: import the two functions exported by script.js and run them -->
+<script type="module">
+    import { initScheduler, initTaskTracker } from "./script.js";
+
+    initScheduler();
+    initTaskTracker();
+</script>
+
+</body>
+</html>

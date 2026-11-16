@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>CodeCamp 2026 | Technical Workshop Booking</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css"></head>
+<body>
+<header class="hero">
+  <p class="tag">&lt;workshop day/&gt; 14 Dec 2026 · SITN Auditorium</p>
+  <h1>Build it live.<br>One day. Real code.</h1>
+  <p class="sub">Hands-on technical workshops for students. Pick a track, grab your seat, bring a laptop.</p>
+</header>
+<main class="wrap">
+  <form id="bookForm" novalidate>
+    <h2>Book your seat</h2>
+    <div class="grid">
+      <label>Full name<input id="name" type="text" placeholder="Harshini Bonde"></label>
+      <label>College email<input id="email" type="email" placeholder="you@college.edu"></label>
+      <label>Mobile number<input id="phone" type="tel" maxlength="10" placeholder="10-digit number"></label>
+      <label>College<input id="college" type="text" placeholder="Your institute"></label>
+      <label>Year<select id="year"><option value="">Select year</option><option>First</option><option>Second</option><option>Third</option><option>Final</option></select></label>
+      <label>Branch<select id="branch"><option value="">Select branch</option><option>CSE</option><option>IT</option><option>ENTC</option><option>Mechanical</option><option>Civil</option><option>Other</option></select></label>
+      <label class="full">Workshop track
+        <select id="track">
+          <option value="" data-price="0">Choose a workshop</option>
+          <option value="Web Dev with jQuery" data-price="299">Web Dev with jQuery — ₹299</option>
+          <option value="Machine Learning Basics" data-price="499">Machine Learning Basics — ₹499</option>
+          <option value="IoT with Arduino" data-price="399">IoT with Arduino — ₹399</option>
+          <option value="Cyber Security 101" data-price="349">Cyber Security 101 — ₹349</option>
+        </select></label>
+      <label>Tickets<input id="qty" type="number" min="1" max="5" value="1"></label>
+      <fieldset><legend>Bringing a laptop?</legend>
+        <label class="inline"><input type="radio" name="laptop" value="Yes" checked> Yes</label>
+        <label class="inline"><input type="radio" name="laptop" value="No"> No</label></fieldset>
+      <label class="full chk"><input type="checkbox" id="lunch"> Add lunch &amp; refreshments (+₹150 per ticket)</label>
+      <label class="full">Anything we should know?<textarea id="notes" rows="2"></textarea></label>
+    </div>
+    <p id="msg" role="alert"></p>
+    <div class="bar"><div>Total <strong id="total">₹0</strong></div><button type="submit">Confirm booking</button></div>
+  </form>
+
+  <aside>
+    <section class="card"><h3>Your bookings</h3>
+      <ul id="list"></ul><button id="clear" class="ghost">Clear all</button></section>
+    <section class="card"><h3>Thought for the day</h3>
+      <p id="quote">Press the button for a quote.</p><button id="getQuote" class="ghost">New quote</button></section>
+  </aside>
+</main>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="script.js"></script>
+</body></html>

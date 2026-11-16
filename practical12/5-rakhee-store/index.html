@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Rakhee Bazaar | Rakhis, Sweets &amp; Gifts</title>
+<link href="https://fonts.googleapis.com/css2?family=Yatra+One&family=Tiro+Devanagari+Hindi&family=Mukta:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css"></head>
+<body>
+<div class="strip"><marquee scrollamount="5">🪔 Free delivery above ₹999 &nbsp;•&nbsp; Order by 5 days before Raksha Bandhan &nbsp;•&nbsp; Handmade by artisans of Rajasthan 🪔</marquee></div>
+<header>
+  <div class="toran"></div>
+  <div class="head"><div class="brand"><h1>राखी बाज़ार</h1><p>Rakhee Bazaar</p></div>
+    <button id="cartBtn">🛒 Cart <b id="cnt">0</b></button></div>
+</header>
+<section class="hero"><div class="mandala"></div>
+  <h2>Bandhan jo dil se bandhe</h2>
+  <p>Handpicked rakhis, mithai and gifts for the brother who is always there.</p>
+  <a href="#shop" class="btn">Shop the collection</a></section>
+
+<section id="shop"><div class="title"><span>❖</span><h3>Our Collection</h3><span>❖</span></div>
+  <div class="filters"><button class="f on" data-c="all">All</button><button class="f" data-c="rakhi">Rakhis</button><button class="f" data-c="sweet">Mithai</button><button class="f" data-c="gift">Gifts</button></div>
+  <div id="grid"></div></section>
+
+<section class="wish"><div class="title"><span>❖</span><h3>A wish for your brother</h3><span>❖</span></div>
+  <p id="wish">—</p><button id="wBtn" class="btn">Another wish</button></section>
+
+<footer>Made with love · Rakhee Bazaar · Happy Raksha Bandhan 🧿</footer>
+
+<aside id="drawer"><div class="dh"><h3>Your cart</h3><button id="close">×</button></div>
+  <div id="items"></div>
+  <div class="dt"><span>Total</span><b id="sum">₹0</b></div>
+  <input id="pin" placeholder="Delivery pincode" maxlength="6"><button id="chk" class="btn full">Check &amp; place order</button><p id="note"></p></aside>
+<div id="veil"></div>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="script.js"></script>
+</body></html>
